@@ -13,7 +13,8 @@ https://github.com/stecklars/dynamic-dns-netcup-api
 ## Technical requirements
  * `python >= 3.7` yes, you read right. This software makes use of some new features, especially `dataclasses` to construct the api data types
  * `pipenv` is used to build the environment and execute the script
- 
+
+## Docker
  Python in the required version is no default in most linux distribution, but you can run in in a docker container.
  Included is a Dockerfile based on `python:3.10-alpine`.
  Build this by `docker build -t nc_dyndns_python .` and run by `docker run nc_dyndns_python:latest -v ${PWD}\settings.json:/app/settings.json -v ${PWD}\hosts.json:/app/hosts.json`.
