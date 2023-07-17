@@ -15,11 +15,11 @@ https://github.com/stecklars/dynamic-dns-netcup-api
  * `pipenv` is used to build the environment and execute the script
  
  Python in the required version is no default in most linux distribution, but you can run in in a docker container.
- Included is a Dockerfile based on `python:3.9-alpine`.
- Build this by `docker build -t nc_dyndns_python .` and run by `docker run nc_dyndns_python:latest`.
+ Included is a Dockerfile based on `python:3.10-alpine`.
+ Build this by `docker build -t nc_dyndns_python .` and run by `docker run nc_dyndns_python:latest -v ${PWD}\settings.json:/app/settings.json -v ${PWD}\hosts.json:/app/hosts.json`.
  
 ## Installation (if you run `python 3.7` or higher)
- * download the repository  `git clone https://github.com/spomjaksilp/netcup-dyndns.git`
+ * download the repository  `git clone https://github.com/sduniii/netcup-dyndns.git`
  * change into the directory and run `pipenv install`
  
 ## Dyndns usage
